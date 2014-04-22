@@ -1,0 +1,15 @@
+h1 User Lists
+table
+  thead
+    th First Name
+    th Last Name
+    th Age
+  - @users.each do |user|
+    tr
+      td = user.first_name
+      td = user.last_name
+      td = user.age
+      td = link_to 'Edit', edit_user_path(user)
+= paginate @users
+br
+= link_to 'New', new_user_path

@@ -1,0 +1,15 @@
+= form_for(@user) do |user|
+  ul id="form-fields"
+    li
+      |First Name
+      = user.text_field :first_name
+    li
+      |Last Name
+      = user.text_field :last_name
+    li
+      |Email
+      = user.text_field :email
+    li
+      |Age
+      = user.number_field :age
+    li = user.submit

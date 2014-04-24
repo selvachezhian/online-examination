@@ -11,6 +11,6 @@ class User
   field :age, type: Integer
 
   # Validations
-  validates :first_name, :last_name, :email, :random, presence: true
+  validates :first_name, :last_name, :email, :age, :random, presence: true
   validates :email, uniqueness: true
 end

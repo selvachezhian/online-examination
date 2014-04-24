@@ -42,8 +42,10 @@ gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git'
 
 gem 'slim-rails'
 
-group :test do
+group :test, :development do
   gem 'rspec-rails'
+  # gem 'shoulda-matchers'
+  gem 'mongoid-rspec'
   gem 'cucumber-rails', require: false
   gem 'database_cleaner'
 end
